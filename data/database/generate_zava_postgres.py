@@ -132,6 +132,7 @@ async def create_connection():
     try:
         conn = await asyncpg.connect(**POSTGRES_CONFIG)
         logging.info(f"Connected to PostgreSQL at {POSTGRES_CONFIG['host']}:{POSTGRES_CONFIG['port']}")
+        print(conn)
         return conn
     except Exception as e:
         logging.error(f"Failed to connect to PostgreSQL: {e}")

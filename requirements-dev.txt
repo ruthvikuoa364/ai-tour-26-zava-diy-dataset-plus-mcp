@@ -5,3 +5,4 @@ openai
 psycopg2
 numpy
 pgvector
+matplotlib
